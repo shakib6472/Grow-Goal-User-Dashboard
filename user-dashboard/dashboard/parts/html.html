@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/46882cce5e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        display: flex;
+        background-color: #000;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+      }
+      body .container .row .l-container {
+        display: flex;
+        background-color: #ffffff;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 45px;
+        width: 75%;
+        padding: 50px 25px;
+        border-radius: 25px;
+      }
+      body .container .row .l-container .choose {
+        background-color: #e6e6e6;
+        padding: 6px 15px;
+        border-radius: 250px;
+        font-family: "Poppins";
+        font-weight: 500;
+        font-size: 26px;
+        border: 1px solid #b3b3b3;
+        cursor: pointer;
+        position: relative;
+        width: 366px;
+        height: 87px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      body .container .row .l-container .choose.active {
+        background-color: #87f1ff;
+      }
+      body .container .row .l-container .choose .choose-con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+      }
+      body .container .row .l-container .choose.active .choose-con i {
+        background-color: #c26ae3; 
+      }
+      body .container .row .l-container .choose .choose-con i {
+        border-radius: 50px;
+        background-color: #a1a1a1;
+        color: #fff; 
+        height: 38px;
+        width: 38px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+      }
+
+      body .container .row .l-container .choose .course-box {
+        background: linear-gradient(145deg, #a892e9, #3a80ff);
+        border-radius: 15px;
+        padding: 20px;
+        width: 350px;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 120%;
+        display: none;
+      }
+      body .container .row .l-container .choose.active .course-box {
+        display: block;
+      }
+
+      .course-box .close-btn {
+        position: absolute;
+        top: -15px;
+        right: 10px;
+        color: white;
+        font-size: 50px;
+        cursor: pointer;
+      }
+
+      .course-item {
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="l-container">
+            <div class="choose course active">
+              <div class="choose-con">
+                <p class="m-0 p-0">Choose the course</p>
+                <i class="fas fa-minus"></i>
+              </div>
+
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="course-box">
+                  <span class="close-btn">&times;</span>
+                  <div class="course-item">Course 1</div>
+                  <div class="course-item">Course 2</div>
+                  <div class="course-item">Course 3</div>
+                </div>
+              </div>
+            </div>
+            <div class="choose grade">
+              <div class="choose-con">
+                <p class="m-0 p-0">Choose the Grade</p>
+                <i class="fas fa-minus"></i>
+              </div>
+
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="course-box">
+                  <span class="close-btn">&times;</span>
+                  <div class="course-item">Course 1</div>
+                  <div class="course-item">Course 2</div>
+                  <div class="course-item">Course 3</div>
+                </div>
+              </div>
+            </div>
+            <div class="choose lesson">
+              <div class="choose-con">
+                <p class="m-0 p-0">Choose the Lesson </p>
+                <i class="fas fa-minus"></i>
+              </div>
+
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="course-box">
+                  <span class="close-btn">&times;</span>
+                  <div class="course-item">Course 1</div>
+                  <div class="course-item">Course 2</div>
+                  <div class="course-item">Course 3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      jQuery(document).ready(function ($) {});
+    </script>
+  </body>
+</html>
